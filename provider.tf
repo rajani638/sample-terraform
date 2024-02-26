@@ -10,6 +10,6 @@ terraform {
 }
  
 # Configure the AWS Provider
-provider "aws" {
+provider "pluralsight-48ec383d" {
   region = "us-west-2"  #change your region
 }
