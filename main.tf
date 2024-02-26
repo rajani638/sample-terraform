@@ -1,7 +1,7 @@
 resource "aws_instance" "web" {
   ami                    = "ami-052c9ea013e6e3567"   #change ami id for different region
   instance_type          = "t2.large"
-  key_name               = "test"
+  key_name               = "sample-terraform"
   vpc_security_group_ids = [aws_security_group.Jenkins-sg.id]
   user_data              = templatefile("./install.sh", {})
  
