@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami                    = "ami-0c7217cdde317cfec"   #change ami id for different region
+  ami                    = "ami-052c9ea013e6e3567"   #change ami id for different region
   instance_type          = "t2.large"
   key_name               = "test"
   vpc_security_group_ids = [aws_security_group.Jenkins-sg.id]
